@@ -1,0 +1,118 @@
+@import "../base.less";
+
+.container{
+    max-width: 1140px;
+}
+
+.header{
+    .header__top {
+        background: #222222;
+        height: auto;
+        .item {
+            font-size: 16px;
+            color: @color_while;
+            padding: 20px 0px;
+            position: relative;
+            i {
+                color: @color_button;
+                border: 1px solid @color_button;
+                padding: 10px;
+                margin-right: 10px;
+                float: left;
+            }
+            .header__language {
+                position: absolute;
+                right: 0;
+                .english{
+                    position: relative;
+                    i{
+                        padding-right: 10px;
+                    }
+                    h4{
+                        display: inline-block;
+                        padding-right: 50px;
+                    }
+                    ::after{
+                        content: '\f107';
+                        font-family: "Font Awesome 5 Free";
+                        font-weight:600;
+                        position: absolute  ;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        .container {
+            clear: both;
+            .content {
+                line-height: 18px;
+                h4 {
+                    .text-style();
+                    font-family: 'Poppins-Regular';
+                    color: #bababa;
+                }
+                p {
+                    .text-style();
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .header__bottom{
+        padding: 27px 0;
+        .header__logo{
+            padding-left: 0;
+            .logo{
+                max-width: 204px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .header__search{
+            .search__box{
+                max-width: 556px;
+                background: @color_while;
+                height: 40px;
+                border-radius: 30px;
+                display: flex;
+                border: 1px solid #bababa;
+                padding: 8px 0;
+            }
+            .dropdown{
+                width: 115px;
+                border-right: 1px solid #bababa;
+                position: relative;
+                font-family: 'Poppins-Regular';
+                color: #bababa;
+                font-size: 12px;
+                ul{
+                    position: absolute;
+                    top: 70px;
+                    left: -10px;
+                    // background: @color_while;
+                    background: #222222;
+                    width: 150px;
+                    border-radius: 5px;
+                    padding: 20px;
+                    box-shadow: 8px 8px 6px -10px #b3c6ff;
+                    li{
+                        padding-bottom: 20px;
+                        &:last-child{
+                            padding-bottom: 0;
+                        }
+                        &:hover{
+                            color: #6f768d;
+                        }
+                    }
+                }
+                .default__category{
+                    padding: 5px 20px;
+                }
+            }
+        }
+    }
+}
