@@ -1,0 +1,83 @@
+@import "../base.less";
+
+.carousel__wapper{
+    .carousel__gird{
+        width: 100%;
+        position: relative;
+        .carousel__content{
+            position: absolute;
+            left: 25%;
+            top: 50%;
+            transform: translate(-14%,-50%);
+            max-width: 683px;
+            h2{
+                font-size: 70px;
+                font-family: 'Poppins-Medium';
+                line-height: 80px;
+                color: #000;
+                letter-spacing: 2px;
+                padding-bottom: 45px;
+                .carousel__content--note{
+                    color: #0ca8c9;
+                    font-family: 'Poppins-SemiBold';
+                }
+            }
+            p{
+                font-family: 'Poppins-Light';
+                color: #8f8f8f;
+                font-size: 18px;
+                padding-bottom: 57px;
+            }
+            a{
+                font-family: 'Poppins-SemiBold';
+                font-size: 16px;
+                color: #000;
+                border-bottom: 2px solid #0ca8c9;
+                padding-bottom: 6px;
+            }
+        }
+    }
+    .slick-slide img{
+        width: 100%;
+    }
+    .slick-prev, .slick-next{
+        z-index: 10001;
+    }
+    .slick-next:before{
+        content: '\f105';
+        font-family: "Font Awesome 5 Free";
+   	    font-weight:600;
+        font-size: 30px;
+        color: #082b4f;
+        padding: 22px;
+        background: #fff;
+        // &:hover{
+        //     background: #0ca8c9;
+        //     color: #fff;
+        // }
+    }
+    .slick-next{
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slick-prev{
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        &:before{
+            content: '\f104';
+            font-family: "Font Awesome 5 Free";
+   	        font-weight:600;
+            font-size: 30px;
+            color: #082b4f;
+            padding: 22px;
+            background: #fff;
+            // &:hover{
+            //     background: #0ca8c9;
+            //     color: #fff;
+            // }
+        }
+    }
+}
+
