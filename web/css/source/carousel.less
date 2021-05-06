@@ -1,32 +1,33 @@
 @import "../base.less";
 
 .carousel__wapper{
-    .carousel__gird{
+    .carousel__grid{
         width: 100%;
         position: relative;
         .carousel__content{
             position: absolute;
             left: 25%;
-            top: 50%;
-            transform: translate(-14%,-50%);
+            top: 48%;
+            transform: translate(-14%, -49%);
             max-width: 683px;
             h2{
                 font-size: 70px;
                 font-family: 'Poppins-Medium';
-                line-height: 80px;
+                line-height: 90px;
                 color: #000;
-                letter-spacing: 2px;
-                padding-bottom: 45px;
+                letter-spacing: 1px;
+                padding-bottom: 20px;
                 .carousel__content--note{
                     color: #0ca8c9;
                     font-family: 'Poppins-SemiBold';
+                    letter-spacing: 0px;
                 }
             }
             p{
                 font-family: 'Poppins-Light';
                 color: #8f8f8f;
                 font-size: 18px;
-                padding-bottom: 57px;
+                padding-bottom: 55px;
             }
             a{
                 font-family: 'Poppins-SemiBold';
@@ -34,6 +35,8 @@
                 color: #000;
                 border-bottom: 2px solid #0ca8c9;
                 padding-bottom: 6px;
+                font-weight: 600;
+                letter-spacing: 1px;
             }
         }
     }
@@ -43,27 +46,30 @@
     .slick-prev, .slick-next{
         z-index: 10001;
     }
-    .slick-next:before{
-        content: '\f105';
-        font-family: "Font Awesome 5 Free";
-   	    font-weight:600;
-        font-size: 30px;
-        color: #082b4f;
-        padding: 22px;
-        background: #fff;
-        // &:hover{
-        //     background: #0ca8c9;
-        //     color: #fff;
-        // }
-    }
     .slick-next{
         right: 60px;
-        top: 50%;
+        top: 49%;
         transform: translateY(-50%);
+        &:before{
+            content: '\f105';
+            font-family: "Font Awesome 5 Free";
+            font-weight:600;
+            font-size: 30px;
+            color: #082b4f;
+            padding: 17px;
+            background: #fff;
+        }
+        &:hover{
+            &:before{
+                background: #0ca8c9;
+                color: #fff;
+            }
+        }
     }
+
     .slick-prev{
         left: 25px;
-        top: 50%;
+        top: 49%;
         transform: translateY(-50%);
         &:before{
             content: '\f104';
@@ -71,12 +77,14 @@
    	        font-weight:600;
             font-size: 30px;
             color: #082b4f;
-            padding: 22px;
+            padding: 17px;
             background: #fff;
-            // &:hover{
-            //     background: #0ca8c9;
-            //     color: #fff;
-            // }
+        }
+        &:hover{
+            &:before{
+                background: #0ca8c9;
+                color: #fff;
+            }
         }
     }
 }

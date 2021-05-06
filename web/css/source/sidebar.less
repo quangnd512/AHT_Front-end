@@ -1,0 +1,136 @@
+@import "../base.less";
+
+.sidebar-wapper{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 60px;
+    .sidebar-left{
+        width: 58%;
+        margin-right: 30px;
+        .sidebabr__countdown{
+            max-width: 654px;
+            max-height: 511px;
+            height: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .note{
+                color: #0ca8c9;
+            }
+            .countdown-content{
+                position: absolute;
+                top: 81%;
+                left: 50%;
+                transform: translate(-50%, -70%);
+                text-align: center;
+                width: 100%;
+                #dountdown-active{
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                    margin-top: 30px;
+                    .countdown-day, .countdown-hou, .countdown-min, .countdown-sec{
+                        padding: 16px 20px;
+                        margin-right: 12px;
+                        background: #fff;
+                        display: inline-block;
+                        font-family: 'Poppins-SemiBold';
+                        font-size: 12px;
+                        color: #000;
+                        .num{
+                            color: #0ca8c9;
+                            font-size: 21px;
+                            font-family: 'Poppins-SemiBold';
+                        }
+                    }
+                }
+                h4{
+                    font-family: 'Poppins-SemiBold';
+                    font-size: 30px;
+                    line-height: 30px;
+                    color:#000000;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-family: 'Poppins-Regular';
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #8f8f8f;
+                }
+            } 
+        }
+    }
+    .sidebar-right{
+        width: 42%;
+        min-height: 355px;
+        .sidebar__discount{
+            max-width: 457px;
+            max-height: 241px;
+            margin-bottom: 30px;
+            position: relative;
+            .discount-content{
+                position: absolute;
+                top: 50%;
+                left: 30px;
+                transform: translateY(-50%);
+                h3{
+                    font-family: 'Poppins-SemiBold';
+                    font-size: 60px;
+                    line-height: 30px;
+                    color: #0ca8c9;
+                    padding-bottom: 13px;
+                }
+                h4{
+                    font-family: 'Poppins-Medium';
+                    font-size: 24px;
+                    line-height: 30px;
+                    color:#000000;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-family: 'Poppins-Regular';
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #8f8f8f;
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .sidebar__sale{
+            max-width: 457px;
+            max-height: 241px;
+            position: relative;
+            .sale-content{
+                position: absolute;
+                top: 50%;
+                left: 33px;
+                transform: translateY(-50%);
+                .note{
+                    color: #0ca8c9;
+                }
+                h4{
+                    font-family: 'Poppins-SemiBold';
+                    font-size: 30px;
+                    line-height: 30px;
+                    color:#000000;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-family: 'Poppins-Regular';
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #8f8f8f;
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

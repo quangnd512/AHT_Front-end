@@ -12,6 +12,8 @@
     <link rel="stylesheet/less" type="text/css" href="./web/css/source/navbar.less" />
     <link rel="stylesheet/less" type="text/css" href="./web/css/source/carousel.less" />
     <link rel="stylesheet/less" type="text/css" href="./web/css/source/article.less" />
+    <link rel="stylesheet/less" type="text/css" href="./web/css/source/sidebar.less" />
+    <link rel="stylesheet/less" type="text/css" href="./web/css/source/product.less" />
     <link rel="stylesheet/less" type="text/css" href="./lib/slick/slick.less">
     <link rel="stylesheet/less" type="text/css" href="./lib/slick/slick-theme.less">
     <script src="./lib/less.js/dist/less.min.js" type="text/javascript"></script>
@@ -23,7 +25,7 @@
         <!-- header  -->
         <div class="header">
             <div class="header__top">
-                <div class="container header__gird">
+                <div class="container header__grid">
                     <div class="row">
                         <div class="item header__address">
                             <i class="fas fa-map-marker-alt"></i>
@@ -102,7 +104,7 @@
 
         <!-- navbar -->
         <div class="navbar__wapper">
-            <div class="navbar__gird">
+            <div class="navbar__grid">
                 <ul class="list-category-left">
                     <span class="icon-bar"></span>
                     <li class="item-left"><a href="#">Categories</a></li>
@@ -121,7 +123,7 @@
 
         <!-- slider -->
         <div class="carousel__wapper">
-            <div class="carousel__gird">
+            <div class="carousel__grid">
                 <img src="./web/image/slider.png" alt="">
                 <div class="carousel__content">
                     <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
@@ -130,7 +132,7 @@
                 </div>
 
             </div>
-            <div class="carousel__gird">
+            <div class="carousel__grid">
                 <img src="./web/image/slider.png" alt="">
                 <div class="carousel__content">
                     <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
@@ -139,7 +141,7 @@
                 </div>
 
             </div>
-            <div class="carousel__gird">
+            <div class="carousel__grid">
                 <img src="./web/image/slider.png" alt="">
                 <div class="carousel__content">
                     <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
@@ -153,36 +155,200 @@
 
         <!-- article -->
         <div class="article-wapper">
-            <div class="article-gird">
-                <img src="./web/image/article-1.png" alt="">
-                <div class="article__content">
-                    <h4>Free Shipping</h4>
-                    <p>Free shipping for all US order </p>
+            <div class="article-grid">
+                <div class="article__card">
+                    <img src="./web/image/article-1.png" alt="">
+                    <div class="article__content">
+                        <h4>Free Shipping</h4>
+                        <p>Free shipping for all US order </p>
+                    </div>
                 </div>
             </div>
-            <div class="article-gird">
-                <img src="./web/image/article-2.png" alt="">
-                <div class="article__content">
-                    <h4>Support 24/7</h4>
-                    <p>We support 24 hours a day </p>
+            <div class="article-grid">
+                <div class="article__card">
+                    <img src="./web/image/article-2.png" alt="">
+                    <div class="article__content">
+                        <h4>Support 24/7</h4>
+                        <p>We support 24 hours a day </p>
+                    </div>
                 </div>
             </div>
-            <div class="article-gird">
-                <img src="./web/image/article-3.png" alt="">
-                <div class="article__content">
-                    <h4>30 Days Return</h4>
-                    <p>You have 30 days to return</p>
+            <div class="article-grid">
+                <div class="article__card">
+                    <img src="./web/image/article-3.png" alt="">
+                    <div class="article__content">
+                        <h4>30 Days Return</h4>
+                        <p>You have 30 days to return</p>
+                    </div>
                 </div>
             </div>
-            <div class="article-gird">
-                <img src="./web/image/article-4.png" alt="">
-                <div class="article__content">
-                    <h4>Secure Payments</h4>
-                    <p>100% Secure & Safe</p>
+            <div class="article-grid">
+                <div class="article__card">
+                    <img src="./web/image/article-4.png" alt="">
+                    <div class="article__content">
+                        <h4>Secure Payments</h4>
+                        <p>100% Secure & Safe</p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- article -->
+
+        <!-- sidebar -->
+        <div class="sidebar-wapper">
+            <div class="sidebar-left">
+                <div class="sidebabr__countdown">
+                    <img src="./web/image/sibar-1.png" alt="Img Countdown" />
+                    <div class="countdown-content">
+                        <h3 id="dountdown-active">
+                        </h3>
+                        <h4>BEAUTY & COSMETICS</h4>
+                        <p>Sale up to <span class="note">40%</span> off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-right">
+                <div class="sidebar__discount">
+                    <img src="./web/image/sibar-2.png" alt="Img Discount">
+                    <div class="discount-content">
+                        <h3>30%</h3>
+                        <h4>Discount</h4>
+                        <p>For Dietary Supplement</p>
+                    </div>
+                </div>
+                <div class="sidebar__sale">
+                    <img src="./web/image/sibar-3.png" alt="Img Sale">
+                    <div class="sale-content">
+                        <h4>accessories</h4>
+                        <p>Sale up to <span class="note">20%</span> off</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar -->
+
+        <!-- Product -->
+        <div class="product-wapper">
+            <div class="product__title">
+                <h3>PRODUCTS</h3>
+                <h4>Top Selling</h4>
+                <div class="arrow-product">
+                    <button class="arrow-left"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill-rule="evenodd" d="M15.28 5.22a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 000 1.06l6.25 6.25a.75.75 0 101.06-1.06L9.56 12l5.72-5.72a.75.75 0 000-1.06z"></path></svg></button>
+                    <button class="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill-rule="evenodd" d="M8.72 18.78a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06L9.78 5.22a.75.75 0 00-1.06 1.06L14.44 12l-5.72 5.72a.75.75 0 000 1.06z"></path></svg></button>
+                </div>
+            </div>
+            <div class="product__item">
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-1.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-2.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-3.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-4.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-5.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-6.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-1.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-2.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-3.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-4.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-5.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <div class="item">
+                        <a href="#"><img src="./web/image/product-6.png" alt=""></a>
+                        <div class="item-content">
+                            <h4><a href="#">Nature's Bounty Biotin 10000 MCG</a></h4>
+                            <h4><a href="#">$30.00</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product -->
 
 
     </div>
@@ -191,6 +357,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./web/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/jQuery.countdown/dist/jquery.countdown.min.js"></script>
     <script src="./lib/slick/slick.min.js"></script>
     <script src="./web/js/style.js"></script>
 </body>
