@@ -1,19 +1,11 @@
-@import "../base.less";
-.article-wapper{
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    padding: 60px 0;
+.article{
     .article-grid{
-        width: 25%;
-        max-width: 262px;
-        margin-right: 24px;
+        padding: 62px 15px;
         .article__card{
             display: flex;
             width: 100%;
             img{
                 max-width: 43px;
-                // width: 20%;
             }
             .article__content{
                 padding-left: 20px;
@@ -21,7 +13,7 @@
                 h4{
                     font-family: 'Poppins-Medium';
                     font-size: 16px;
-                    color: #000;
+                    color: @color_text;
                     max-width: 219px;
                     max-height: 17px;
                     overflow: hidden;
@@ -29,7 +21,7 @@
                 p{
                     font-family: 'Poppins-Regular';
                     font-size: 14px;
-                    color: #8f8f8f;
+                    color: @color_text-p;
                     max-width: 219px;
                     max-height: 50px;
                     padding-top: 8px;
