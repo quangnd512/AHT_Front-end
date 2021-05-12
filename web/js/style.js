@@ -20,6 +20,40 @@ $(document).ready(function() {
     });
 });
 
+
+//menu navbar
+$(document).ready(function() {
+    $(".list-category-left").click(function() {
+        $(".navbar__responsive").toggleClass("active");
+        $(".overlay").toggleClass("active");
+    });
+    $(".navbar__responsive li").click(function() {
+        $(".navbar__responsive").toggleClass("active");
+        $(".overlay").toggleClass("active");
+    });
+    $(".overlay").click(function() {
+        $(".navbar__responsive").toggleClass("active");
+        $(".overlay").toggleClass("active");
+    });
+});
+
+//menu navbar responsive
+$(document).ready(function() {
+    $(".header__responsive__nav").click(function() {
+        $(".header__nav--responsive").toggleClass("active");
+        $(".overlay").toggleClass("active");
+    });
+    $(".header__nav--responsive li").click(function() {
+        $(".header__nav--responsive").hideClass("active");
+        $(".overlay").hideClass("active");
+    });
+    $(".overlay").click(function() {
+        $(".header__nav--responsive").toggleClass("active");
+        $(".overlay").toggleClass("active");
+    });
+});
+
+
 $('.carousel__wapper').slick({
     infinite: true,
     slidesToShow: 1,
@@ -34,6 +68,9 @@ $('.carousel__wapper').slick({
 $('#dountdown--active').countdown('2022/05/05', function(event) {
     $(this).html(event.strftime('<div class="countdown-day"><span class="num">%D</span><br/> days</div><div class="countdown-hou"><span class="num">%H</span><br/> hrs</div><div class="countdown-min"><span class="num">%M</span><br/> mins</div><div class="countdown-sec"><span class="num">%S</span><br/> sec</div> '));
 });
+
+
+
 
 // product item
 $('.product__item').slick({
