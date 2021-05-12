@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <div class="wapper">
         <!--  -->
         <!-- header  -->
@@ -19,21 +20,21 @@
             <div class="medy-grid header__top">
                 <div class="medy-container">
                     <div class="medy-row">
-                        <div class="medy-col medy-col-3 header__item header__address">
+                        <div class="medy-col medy-col-3 medy-p-col-4 header__item header__address">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="content">
                                 <h4>Find us</h4>
                                 <p><a href="#">325 admiral unit, North cost, USA</a></p>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-2 header__item header__email">
+                        <div class="medy-col medy-col-2 medy-p-col-3 header__item header__email">
                             <i class="fas fa-envelope"></i>
                             <div class="content">
                                 <h4>Email Us</h4>
                                 <p><a href="mailto:admin@medyplus.com">admin@medyplus.com</a></p>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-2 header__item header__tel">
+                        <div class="medy-col medy-col-2 medy-p-col-3 header__item header__tel">
                             <i class="fas fa-phone-alt"></i>
                             <div class="content">
                                 <h4>Call Us Now</h4>
@@ -41,7 +42,7 @@
                                     <a href="tel:+00201008431112"></a>002 - 0100 843 1112</p>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-5 header__item">
+                        <div class="medy-col medy-col-5 medy-p-col-2 header__item">
                             <div class="header__language">
                                 <div class="header__option header__option__first eng">
                                     <img src="./web/image/Flag_America.png" alt="">
@@ -70,12 +71,19 @@
             <div class="medy-grid header__bottom">
                 <div class="medy-container">
                     <div class="medy-row">
-                        <div class="medy-col medy-col-3">
+                        <div class="medy-col medy-t-col-2 header__responsive__nav">
+                            <div class="header__nav">
+                                <ul class="list-nav-left">
+                                    <i class="icon-bar"></i>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="medy-col medy-col-3 medy-p-col-3 medy-t-col-6 header__medy-logo">
                             <h1 class="header__logo">
                                 <a href="#"><img src="./web/image/logo.png" alt=""></a>
                             </h1>
                         </div>
-                        <div class="medy-col medy-col-8 header__search">
+                        <div class="medy-col medy-col-8 medy-p-col-6 medy-t-col-12 header__search">
                             <div class="search__box">
                                 <div class="dropdown">
                                     <div class="default__category">All Category</div>
@@ -92,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-1 header__cart">
+                        <div class="medy-col medy-col-1 medy-p-col-3 medy-t-col-4 header__cart">
                             <div class="header__cart-icon">
                                 <div class="header__setting">
                                     <img src="./web/image/icon-setting.png" alt="">
@@ -143,33 +151,43 @@
 
             <!--  -->
             <!-- slider -->
-            <div class="carousel__wapper">
-                <div class="carousel__grid">
-                    <img src="./web/image/slider.png" alt="">
-                    <div class="carousel__content">
-                        <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
-                        <p>Free Standard Shipping Everyday</p>
-                        <a href="#">Shop Now</a>
+            <div class="carousels">
+                <div class="carousel__arrows">
+                    <div class="carousel__arrows--left">
+                        <i class="fas fa-chevron-left"></i>
                     </div>
-
+                    <div class="carousel__arrows--right">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
                 </div>
-                <div class="carousel__grid">
-                    <img src="./web/image/slider.png" alt="">
-                    <div class="carousel__content">
-                        <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
-                        <p>Free Standard Shipping Everyday</p>
-                        <a href="#">Shop Now</a>
-                    </div>
+                <div class="carousel__wapper">
+                    <div class="carousel__grid">
+                        <img src="./web/image/slider.png" alt="">
+                        <div class="carousel__content">
+                            <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
+                            <p>Free Standard Shipping Everyday</p>
+                            <a href="#">Shop Now</a>
+                        </div>
 
-                </div>
-                <div class="carousel__grid">
-                    <img src="./web/image/slider.png" alt="">
-                    <div class="carousel__content">
-                        <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
-                        <p>Free Standard Shipping Everyday</p>
-                        <a href="#">Shop Now</a>
                     </div>
+                    <div class="carousel__grid">
+                        <img src="./web/image/slider.png" alt="">
+                        <div class="carousel__content">
+                            <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
+                            <p>Free Standard Shipping Everyday</p>
+                            <a href="#">Shop Now</a>
+                        </div>
 
+                    </div>
+                    <div class="carousel__grid">
+                        <img src="./web/image/slider.png" alt="">
+                        <div class="carousel__content">
+                            <h2>Find Any <span class="carousel__content--note">Medicine</span> You Need!</h2>
+                            <p>Free Standard Shipping Everyday</p>
+                            <a href="#">Shop Now</a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <!-- slider -->
@@ -179,7 +197,7 @@
             <div class="medy-grid article">
                 <div class="medy-container article__grid">
                     <div class="medy-row">
-                        <div class="medy-col medy-col-3 article-grid">
+                        <div class="medy-col medy-col-3 medy-t-col-6 article-grid">
                             <div class="article__card">
                                 <img src="./web/image/article-1.png" alt="">
                                 <div class="article__content">
@@ -188,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-3 article-grid">
+                        <div class="medy-col medy-col-3 medy-t-col-6 article-grid">
                             <div class="article__card">
                                 <img src="./web/image/article-2.png" alt="">
                                 <div class="article__content">
@@ -197,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-3 article-grid">
+                        <div class="medy-col medy-col-3 medy-t-col-6 article-grid">
                             <div class="article__card">
                                 <img src="./web/image/article-3.png" alt="">
                                 <div class="article__content">
@@ -206,7 +224,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-3 article-grid">
+                        <div class="medy-col medy-col-3 medy-t-col-6 article-grid">
                             <div class="article__card">
                                 <img src="./web/image/article-4.png" alt="">
                                 <div class="article__content">
@@ -224,7 +242,7 @@
             <div class="medy-grid sidebar">
                 <div class="medy-container sidebar__grid">
                     <div class="medy-row">
-                        <div class="medy-col medy-col-7 sidebar__left">
+                        <div class="medy-col medy-col-7 medy-t-col-12 sidebar__left">
                             <div class="sidebabr__countdown">
                                 <img src="./web/image/sibar-1.png" alt="Img Countdown" />
                                 <div class="countdown__content">
@@ -235,7 +253,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="medy-col medy-col-5 sidebar__right">
+                        <div class="medy-col medy-col-5 medy-t-col-12 sidebar__right">
                             <div class="sidebar__discount">
                                 <img src="./web/image/sibar-2.png" alt="Img Discount">
                                 <div class="discount__content">
@@ -515,7 +533,7 @@
                 <div class="medy-container footers__top__grid">
                     <div class="medy-row">
                         <!-- Contact -->
-                        <div class="medy-col medy-col-4 contacts">
+                        <div class="medy-col medy-col-4 medy-p-col-3 medy-t-col-6 medy-sm-col-12 contacts">
                             <div class="footer__contact">
                                 <h2>Contact Us</h2>
                                 <ul>
@@ -549,7 +567,7 @@
                         <!-- Contact -->
 
                         <!-- Company -->
-                        <div class="medy-col medy-col-3 companys">
+                        <div class="medy-col medy-col-3 medy-p-col-3 medy-t-col-6 medy-sm-col-12 companys">
                             <div class="footer__conpany">
                                 <h2>Company</h2>
                                 <ul>
@@ -564,7 +582,7 @@
                         <!-- Company -->
 
                         <!-- Categories -->
-                        <div class="medy-col medy-col-3 categories">
+                        <div class="medy-col medy-col-3 medy-p-col-3 medy-t-col-6 medy-sm-col-12 categories">
                             <div class="footer__category">
                                 <h2>Categories</h2>
                                 <ul>
@@ -579,7 +597,7 @@
                         <!-- Categories -->
 
                         <!-- Information -->
-                        <div class="medy-col medy-col-2 infomations">
+                        <div class="medy-col medy-col-2 medy-p-col-3 medy-t-col-6 medy-sm-col-12 infomations">
                             <div class="footer__infomation">
                                 <h2>Quick Links</h2>
                                 <ul>
@@ -601,13 +619,13 @@
                 <div class="medy-container footers__bottom__grid">
                     <div class="medy-row">
                         <!-- Copyright -->
-                        <div class="medy-col medy-col-4 copyright">
+                        <div class="medy-col medy-col-4 medy-t-col-3 medy-sm-col-12 copyright">
                             <h4 class="copyright-text">@2018 Design by <a href="#">Creative Wp.</a> All Rights Reserved.</h4>
                         </div>
                         <!-- Copyright -->
 
                         <!-- Payments -->
-                        <div class="medy-col medy-col-8 payments">
+                        <div class="medy-col medy-col-8 medy-t-col-9 medy-sm-col-12 payments">
                             <div class="payments__icon">
                                 <div>
                                     <a href="#">
