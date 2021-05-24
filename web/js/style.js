@@ -20,6 +20,38 @@ $(document).ready(function() {
     });
 });
 
+//setting js
+$(document).ready(function() {
+    $(".header__setting").click(function() {
+        $(".header__setting--responsive").show();
+        $(".overlay").show();
+    });
+    $(".header__setting--responsive li").click(function() {
+        $(".header__setting--responsive").hide();
+        $(".overlay").hide();
+    });
+    $(".overlay").click(function() {
+        $(".header__setting--responsive").hide();
+        $(".overlay").hide();
+    });
+});
+
+//shoping bag js
+$(document).ready(function() {
+    $(".header__shopping-bag").click(function() {
+        $(".header__shopping--responsive").show();
+        $(".overlay").show();
+    });
+    $(".header__shopping--responsive li").click(function() {
+        $(".header__shopping--responsive").hide();
+        $(".overlay").hide();
+    });
+    $(".overlay").click(function() {
+        $(".header__shopping--responsive").hide();
+        $(".overlay").hide();
+    });
+});
+
 
 //menu navbar
 $(document).ready(function() {
